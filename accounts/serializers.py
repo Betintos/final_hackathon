@@ -6,9 +6,12 @@ from .tasks import send_activation_code
 
 User = get_user_model()
 
+
 class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(min_length=4, required=True, write_only=True)
-    password_confirm = serializers.CharField(min_length=4, required=True, write_only=True)
+    password_confirm = serializers.CharField(
+        min_length=4, required=True, write_only=True
+    )
 
     class Meta:
         model = User
