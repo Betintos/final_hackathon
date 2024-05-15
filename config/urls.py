@@ -26,10 +26,10 @@ from config import settings
 schema_view = get_schema_view(
     openapi.Info(
         title="Документация",
-        description="shop api",
+        description="Final Hackathon",
         default_version="v1",
     ),
-    public=True
+    public=True,
 )
 
 urlpatterns = [
@@ -38,6 +38,4 @@ urlpatterns = [
     path("docs/", schema_view.with_ui("swagger")),
 ]
 
-urlpatterns += static(
-    settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
-)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
