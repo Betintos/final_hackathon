@@ -1,22 +1,12 @@
 [tool.poetry]
-name = "final hackathon"
+name = "final-hackathon"
 version = "0.1.0"
 description = ""
-authors = ["Betintos <qed.beknazar@gmail.com>"]
+authors = ["AdiletCH <adimaster2008@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
-djangorestframework = "^3.15.1"
-psycopg2-binary = "^2.9.9"
-python-decouple = "^3.8"
-djangorestframework-simplejwt = "^5.3.1"
-pillow = "^10.3.0"
-django-filter = "^24.2"
-drf-yasg = "^1.21.7"
-python-slugify = "^8.0.4"
-redis = "^5.0.4"
-celery = "^5.4.0"
+python = "^3.10"
 
 
 [build-system]
